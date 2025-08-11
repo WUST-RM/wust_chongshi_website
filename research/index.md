@@ -126,7 +126,7 @@ option && myChart.setOption(option);
 
 {% assign awards_count =  national_awards_count | plus: international_awards_count | plus: provincial_awards_count | plus: other_awards_count %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{awards_count}} 项奖项。 -->
+根据不完全统计，崇实战队已经获得了总计 {{awards_count}} 项奖项。 -->
 <table>
 <tr>
   <td>国家级奖项</td>
@@ -165,7 +165,7 @@ option && myChart.setOption(option);
 {% include search-box.html %}
 {% include search-info.html %}
 
-<!-- 根据不完全统计，狼牙战队已经获得了总计 {{site.projects | size}} 项大创项目。 -->
+根据不完全统计，崇实战队已经获得了总计 {{site.projects | size}} 项大创项目。
 
 {% include list.html data="projects" component="projects" style="simple" %}
 
@@ -176,7 +176,7 @@ option && myChart.setOption(option);
 {% include search-box.html %}
 {% include search-info.html %}
 
-<!-- 根据不完全统计，狼牙战队已经获得了总计 {{site.patents | size}} 项专利。 -->
+根据不完全统计，崇实战队已经获得了总计 {{site.patents | size}} 项专利。
 
 {% include list.html data="patents" component="patents" style="simple" %}
 
