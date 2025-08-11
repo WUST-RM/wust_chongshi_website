@@ -6,12 +6,12 @@ header: images/test_back.JPG
 header-video: images/bgvideo.mp4
 footer: images/test_back.JPG
 proofer: false
-slogan: 一往无前华科行，气壮山河狼牙名
+slogan: 崇研尚实，登峰造极境
 # site social media and other links
 links:
   email: heiyuemoon@outlook.com
   github: WUST-RM
-  bilibili: "475402455"
+  bilibili: "1932601494"
   wechat: https://mp.weixin.qq.com/s/Zrk4PRRGSimJG9bVDj3Zsg
 ## jekyll settings
 
