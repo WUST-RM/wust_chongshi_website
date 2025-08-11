@@ -105,7 +105,7 @@ option && myChart.setOption(option);
 
 
 
-<!-- ## 荣誉奖项
+## 荣誉奖项
 {% include search-box.html %}
 {% include search-info.html %}
 {% assign national_awards_count = 0 %}
@@ -127,7 +127,7 @@ option && myChart.setOption(option);
 {% assign awards_count =  national_awards_count | plus: international_awards_count | plus: provincial_awards_count | plus: other_awards_count %}
 
 根据不完全统计，狼牙战队已经获得了总计 {{awards_count}} 项奖项。 -->
-<!-- <table>
+<table>
 <tr>
   <td>国家级奖项</td>
   <td>国际级奖项</td>
@@ -140,7 +140,7 @@ option && myChart.setOption(option);
   <td>{{provincial_awards_count}}</td>
   <td>{{other_awards_count}}</td>
 </tr>
-</table> -->
+</table>
 
 
 
