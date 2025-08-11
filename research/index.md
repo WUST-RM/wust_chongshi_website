@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}我们的成果
 
-## 历史成绩
+<!-- ## 历史成绩
 狼牙战队是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平目标的综合型团队。
 
 * 15年分区赛亚军、季军和第五名，在全国赛均进入全国三十二强；
@@ -19,11 +19,11 @@ nav:
 * 21年分区赛十六强；
 * 22年分区赛八强，全国赛线上评选，国家级一等奖；
 * 23年分区赛十六强，全国赛四十六强，国家级二等奖；
-* 24年分区赛殿军，全国赛二十八强，国家级二等奖。
+* 24年分区赛殿军，全国赛二十八强，国家级二等奖。 -->
 
 {% include section.html %}
 <!-- echarts -->
-## 积分榜排名
+<!-- ## 积分榜排名
 <div id="echarts" style="width: 100%; height: 300px;"></div>
 
 <script>
@@ -72,12 +72,12 @@ option = {
   ]
 };
 option && myChart.setOption(option);
-</script>
+</script> -->
 
 {% include section.html %}
 
 
-## 高光时刻
+<!-- ## 高光时刻
 <div class="card">
 <div class="card-text">
 <div class="card-title">RoboMaster 2024</div>
@@ -98,14 +98,14 @@ option && myChart.setOption(option);
 <div class="card-image">
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1405028929&bvid=BV1sr421L7yP&cid=1557709783&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" mute="true"></iframe>
 </div>
-</div>
+</div> -->
 
 
 {% include section.html %}
 
 
 
-## 荣誉奖项
+<!-- ## 荣誉奖项
 {% include search-box.html %}
 {% include search-info.html %}
 {% assign national_awards_count = 0 %}
@@ -126,8 +126,8 @@ option && myChart.setOption(option);
 
 {% assign awards_count =  national_awards_count | plus: international_awards_count | plus: provincial_awards_count | plus: other_awards_count %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{awards_count}} 项奖项。
-<table>
+根据不完全统计，狼牙战队已经获得了总计 {{awards_count}} 项奖项。 -->
+<!-- <table>
 <tr>
   <td>国家级奖项</td>
   <td>国际级奖项</td>
@@ -140,7 +140,7 @@ option && myChart.setOption(option);
   <td>{{provincial_awards_count}}</td>
   <td>{{other_awards_count}}</td>
 </tr>
-</table>
+</table> -->
 
 
 
@@ -165,7 +165,7 @@ option && myChart.setOption(option);
 {% include search-box.html %}
 {% include search-info.html %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{site.projects | size}} 项大创项目。
+<!-- 根据不完全统计，狼牙战队已经获得了总计 {{site.projects | size}} 项大创项目。 -->
 
 {% include list.html data="projects" component="projects" style="simple" %}
 
@@ -176,7 +176,7 @@ option && myChart.setOption(option);
 {% include search-box.html %}
 {% include search-info.html %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{site.patents | size}} 项专利。
+<!-- 根据不完全统计，狼牙战队已经获得了总计 {{site.patents | size}} 项专利。 -->
 
 {% include list.html data="patents" component="patents" style="simple" %}
 

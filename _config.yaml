@@ -23,27 +23,27 @@ defaults:
     values:
       layout: default
   # markdown files in /_members
-  - scope:
-      type: "members"
-    values:
-      layout: member
-  - scope:
-      type: "awards"
-    values:
-      layout: award
-  - scope:
-      type: "events"
-    values:  
-      layout: event
-  # markdown files in /_posts
-  - scope:
-      type: "posts"
-    values:
-      layout: post
-  - scope:
-      type: "news"
-    values:
-      layout: post
+  # - scope:
+  #     type: "members"
+  #   values:
+  #     layout: member
+  # - scope:
+  #     type: "awards"
+  #   values:
+  #     layout: award
+  # - scope:
+  #     type: "events"
+  #   values:  
+  #     layout: event
+  # # markdown files in /_posts
+  # - scope:
+  #     type: "posts"
+  #   values:
+  #     layout: post
+  # - scope:
+  #     type: "news"
+  #   values:
+  #     layout: post
 
 
 
