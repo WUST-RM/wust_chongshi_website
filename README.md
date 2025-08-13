@@ -1,5 +1,5 @@
 
-# WUST-RMDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# wust_chongshi_website
 
 Visit **[wust-rm.github.io/wust_chongshi_website](https://wust-rm.github.io/wust_chongshi_website)** 🚀
 

@@ -9,35 +9,26 @@
   {% endif %}
   data-size="wide"
 >
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-    <div
-    class="button-wrapper"
-   >
-       <img src="{{ '/images/wustlogo.png' | relative_url }}" alt="华中科技大学" style="max-height: 50px;  margin-right: 5%; margin-left: 5%; display: block;">
-      <!-- <img src="{{ '/images/eic.png' | relative_url }}" alt="华中科技大学" style="max-height: 35px;  margin-right: 5%; margin-left: 5%; display: block;"> -->
-    </div>
- 
-  
-  <div>
+  <!-- 底部 Logo -->
+  <div class="button-wrapper">
+    <img src="{{ '/images/wustlogo.png' | relative_url }}" alt="武汉科技大学" class="footer-logo">
+  </div>
+
+  <!-- 链接按钮 -->
+  <div class="footer-links">
     {% for link in site.links %}
       {% assign key = link[0] %}
       {% assign value = link[1] %}
       {% include button.html type=key text="" icon=link.icon link=value style="bare" %}
     {% endfor %}
-    <br>
-    <!-- {% include button.html type="links" text="狼牙数据站" link="http://db.hustlangya.fun" style="bare" icon="fa-solid fa-database"%} -->
   </div>
 
-  <div>
-    &copy; {{ site.time | date: "%Y" }}
-    {{ site.title }}
-    
+  <!-- 版权信息 -->
+  <div class="footer-copy">
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }}
   </div>
 
+  <!-- 暗黑模式切换 -->
   <input
     type="checkbox"
     class="dark-toggle"
@@ -46,3 +37,73 @@
     oninput="onDarkToggleChange(event)"
   >
 </footer>
+
+<style>
+/* Footer 背景和光晕 */
+footer.background {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.08), rgba(0, 100, 255, 0.08)),
+              var(--image) no-repeat center/cover;
+  color: #0ff;
+  text-align: center;
+}
+
+/* 光晕脉冲 */
+footer.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(0,255,255,0.12), transparent 70%),
+              radial-gradient(circle at 80% 70%, rgba(0,100,255,0.12), transparent 70%);
+  animation: pulse-footer 6s infinite alternate;
+  z-index: 0;
+  pointer-events: none;
+}
+@keyframes pulse-footer {
+  0% { opacity: 0.4; }
+  100% { opacity: 0.8; }
+}
+
+/* Logo 发光效果 */
+.footer-logo {
+  max-height: 50px;
+  margin: 0 auto 20px auto;
+  display: block;
+  filter: drop-shadow(0 0 8px cyan);
+  transition: transform 0.3s ease;
+}
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+/* 链接按钮发光 */
+.footer-links {
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+.footer-links a, .footer-links button {
+  color: #0ff;
+  transition: all 0.3s ease;
+}
+.footer-links a:hover, .footer-links button:hover {
+  color: #fff;
+  text-shadow: 0 0 6px cyan;
+}
+
+/* 版权信息 */
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  z-index: 2;
+  position: relative;
+}
+
+/* 暗黑模式开关层级 */
+footer .dark-toggle {
+  position: relative;
+  z-index: 2;
+}
+</style>
